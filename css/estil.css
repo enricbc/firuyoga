@@ -1,0 +1,208 @@
+
+/* start calendar */
+	* {box-sizing: border-box;}
+	ul {list-style-type: none;}
+	body {font-family: Verdana, sans-serif;}
+
+	.month {
+			padding: 70px 25px;
+			width: 100%;
+			background: #1abc9c;
+			text-align: center;
+	}
+
+	.month ul {
+			margin: 0;
+			padding: 0;
+	}
+
+	.month ul li {
+			color: white;
+			font-size: 20px;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+	}
+
+	.month .prev {
+			float: left;
+			padding-top: 10px;
+	}
+
+	.month .next {
+			float: right;
+			padding-top: 10px;
+	}
+
+	.weekdays {
+			margin: 0;
+			padding: 10px 0;
+			background-color: #ddd;
+	}
+
+	.weekdays li {
+			display: inline-block;
+			width: 13.6%;
+			color: #666;
+			text-align: center;
+	}
+
+	.days {
+			padding: 10px 0;
+			background: #eee;
+			margin: 0;
+	}
+
+	.days li {
+			list-style-type: none;
+			display: inline-block;
+			width: 13.6%;
+			text-align: center;
+			margin-bottom: 5px;
+			font-size:12px;
+			color: #777;
+	}
+
+	.days li .active {
+			padding: 5px;
+			background: #1abc9c;
+			color: white !important
+	}
+
+	/* Add media queries for smaller screens */
+	@media screen and (max-width:720px) {
+			.weekdays li, .days li {width: 13.1%;}
+	}
+
+	@media screen and (max-width: 420px) {
+			.weekdays li, .days li {width: 12.5%;}
+			.days li .active {padding: 2px;}
+	}
+
+	@media screen and (max-width: 290px) {
+			.weekdays li, .days li {width: 12.2%;}
+	}
+	/* End calendar */
+#a1 {
+	color: #F00;
+	text-decoration: none;
+}
+
+#a1:visited {
+	color: #0A0;
+}
+
+#a1:hover {
+	color: #FFF;
+	background-color: #F00;
+	text-decoration: underline;
+}
+
+#a1:focus {
+	color: #00F;
+	text-decoration: underline;
+}
+
+#a1:active {
+	color: #F60;
+	background-color: #FFF;
+}
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+footer {
+	background-color: #222222;
+	background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+	padding: 25px;
+	color: white;
+	font-weight: bold;
+	list-style: none;
+}
+
+
+.campsform {
+	margin-left: 450px;
+}
+
+input.form-control.campsform {
+	width: 30%;
+}
+
+#contacteform {
+	margin-bottom: 100px;
+}
+
+#detalls {
+	color: white;
+	/*font-weight: bold;*/
+}
+
+/* TEXT GLOW */
+h1 {
+	text-align: center;
+	font-size: 7em;
+	margin: 20px 0 20px 0;
+}
+
+a {
+	text-decoration: none;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+h1:nth-child(1) a {
+	font-size: 1.5em;
+	color: #000021;
+	font-family: Iceland;
+	text-decoration: none;
+}
+
+h1:nth-child(1) a:hover {
+	text-decoration: none;
+	-webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+	-moz-animation: neon2 1.5s ease-in-out infinite alternate;
+	animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+h1 a:hover {
+  color: #0000;
+}
+
+/* EFECTE GLOW WEBKIT*/
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+/* EFECTE GLOW MOZILLA*/
+
+@-moz-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+/* EFECTE GLOW */
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+#fondo {
+	background-color: #222222;
+	background: repeating-linear-gradient(90deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+}
