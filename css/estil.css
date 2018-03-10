@@ -86,7 +86,9 @@
 	color: #F00;
 	text-decoration: none;
 }
-
+.justifyText{
+text-align : justify;
+}
 #a1:visited {
 	color: #0A0;
 }
